@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: "Fira code", "Fira Mono", monospace;
 }
 
 .App-logo {
@@ -13,26 +14,37 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.App-Container {
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: url('../public/background_image.jpg');
+  background-repeat: no-repeat;
+  /* background-image: url("https://static.fotor.com/app/features/static/media/image_no_bg.e9d2eb5f.svg");
+  background-repeat: repeat; */
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  /* color: white; */
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.upload-icon{
+  position: absolute;
+  top: -0.4rem;
+  right: 1rem;
+}
+
+.test-plan{
+  /* background-color: #f0f0f0; */
+  font-size: medium;
+}
+.icon-button:hover{
+  scale: 1.2;
 }
